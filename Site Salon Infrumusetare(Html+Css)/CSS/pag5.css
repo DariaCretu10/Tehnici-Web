@@ -1,0 +1,102 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color:#ffddbb;
+    background-size:cover;
+}
+.container{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+}
+nav ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  list-style: none;
+  display:inline
+  }
+  nav ul li a{
+  text-decoration: none;
+  color: rgb(0, 74, 0);
+  }
+  .active, nav ul li:hover{
+    background: #ffcc99;
+    border-radius: 3px;
+  }
+  .submenu {
+   display: none;
+   float: right;
+   background-color: #ffcc99;
+   
+  }
+  nav ul li:hover .submenu{
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left:300px;
+  }
+  nav ul li:hover .submenu ul
+  { display: block;
+    margin: 10px;
+  }
+  nav ul li:hover .submenu ul li{
+   width: 120px;
+   padding: 0px;
+   border-radius: 0;
+   
+  }
+
+   .par li { font-size: 25px;
+    padding: 10px;}
+
+    div.galerie {
+      border: 1px solid #ccc;
+    }
+    
+    div.galerie:hover {
+      border: 1px solid #777;
+    }
+    
+    div.galerie img {
+      width: 100%;
+      height: 350px;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .resp {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    
+    @media only screen and (max-width: 800px) {
+      .resp {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+      .par li{ font-size: 20px;}
+      nav ul li { display:block;}
+      .submenu { margin-left: 0px; float:right;}
+      nav ul li:hover .submenu { margin-left: 10px;}
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .resp {
+        width: 100%;
+      }
+      .par li{ font-size: 15px;}
+      div.galerie { width: 350px;}
+      nav ul li { display:block;}
+     .submenu { margin-left: 0px; float:right;}
+      nav ul li:hover .submenu { margin-left: 10px;}
+    }
+
+    
+    
+
+
+    

@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/Fundal.jpg);
+    background-size: cover;
+}
+.container{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+}
+nav ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  list-style: none;
+  display:inline
+  }
+  nav ul li a{
+  text-decoration: none;
+  color: rgb(0, 74, 0);
+  }
+  .active, nav ul li:hover{
+    background: #ffcc99;
+    border-radius: 3px;
+  }
+  .submenu {
+   display: none;
+   float: right;
+   background-color: #ffcc99;
+   
+  }
+  nav ul li:hover .submenu{
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left:300px;
+  }
+  nav ul li:hover .submenu ul
+  { display: block;
+    margin: 10px;
+  }
+  nav ul li:hover .submenu ul li{
+   width: 120px;
+   padding: 0px;
+   border-radius: 0;
+   
+  }
+
+#Scris {
+        text-align: center;
+        font-style: italic;
+        font-size: 2rem;
+        background-color: #ffffff;
+        opacity: 0.6;
+        margin-top:110px;
+    
+     }
+audio {
+        margin-top: 170px;
+      }
+span { color: red;}
+
+@media only screen and (max-width: 740px) {
+  
+  nav ul li { display:block;}
+  .submenu { margin-left: 0px; float:right;}
+  nav ul li:hover .submenu { margin-left: 10px;}
+  body { 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     }
+}
+
+@media only screen and (max-width: 500px) {
+  
+  nav ul li { display:block;}
+ .submenu { margin-left: 0px; float:right;}
+  nav ul li:hover .submenu { margin-left: 10px;}
+}
+
+
+

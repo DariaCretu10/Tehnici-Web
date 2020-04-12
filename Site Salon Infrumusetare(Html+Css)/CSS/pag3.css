@@ -1,0 +1,136 @@
+
+body{
+    margin:0;
+    padding: 0;
+    background-color:#ffddbb;
+    background-size:cover;
+}
+.container{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+}
+nav ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  list-style: none;
+  display:inline
+  }
+  nav ul li a{
+  text-decoration: none;
+  color: rgb(0, 74, 0);
+  }
+  .active, nav ul li:hover{
+    background: #ffcc99;
+    border-radius: 3px;
+  }
+  .submenu {
+   display: none;
+   float: right;
+   background-color: #ffcc99;
+   
+  }
+  nav ul li:hover .submenu{
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left:300px;
+  }
+  nav ul li:hover .submenu ul
+  { display: block;
+    margin: 10px;
+  }
+  nav ul li:hover .submenu ul li{
+   width: 120px;
+   padding: 0px;
+   border-radius: 0;
+   
+  }
+
+  .echipa{
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: 150px 250px;
+    border-top: 0;
+}
+.coloane{ margin-left: 2vw;}
+
+.formular { display: inline-block;
+             }
+
+#detalii
+{ text-align: center;
+  margin-left: 30vh;
+  margin-top: 30px;}
+
+input{
+   border: none;
+   border-bottom: 2px solid purple;
+   background-color: #ffddbb;
+   outline: none;
+ }
+
+input[type=button]
+{
+   border: 2px solid purple;
+   border-radius: 10px;
+}
+.headings {
+   background-color: #ffcc99;
+   border-radius: 15px;
+   padding: 10px;
+   font-family: Font;
+}
+@font-face {
+   font-family: Font;
+   src: url(../Font/elegant_line_7.ttf);
+ }
+
+ @media only screen and (max-width: 728px) {
+  .headings { font-size: 20px;}
+  .echipa { font-size: 18px;}
+  nav ul li { display:block;}
+  .submenu { margin-left: 0px; float:right;}
+  nav ul li:hover .submenu { margin-left: 10px;}
+}
+
+@media only screen and (max-width: 500px) {
+  .headings { font-size: 18px;}
+  .echipa { font-size: 15px;}
+  .formular { margin-left: 0px;}
+  nav ul li { display:block;}
+  .submenu { margin-left: 0px;
+  float:right;}
+  nav ul li:hover .submenu { margin-left: 10px;}
+ 
+}
+
+form { display: inline-block;
+       }
+
+       #ani {
+        width: 130px;
+        height: 40px;
+        background-color: #ffcc99;
+        font-weight: bold;
+        position: relative;
+        animation: animatie 5s infinite;
+        animation-timing-function: ease;
+        text-align: center;
+        border-radius: 3px;
+        padding-top:12px;
+        font-family: Font;
+      }
+      @keyframes animatie {
+        from {left: 0px;}
+        to {left: 300px;}
+      }
+
+      input[type=image] {border-bottom: none;}
+  
+
+
+
+
+ 

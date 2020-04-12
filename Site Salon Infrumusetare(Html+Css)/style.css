@@ -1,0 +1,79 @@
+
+body{
+    margin:0;
+    padding: 0;
+}
+#acasa{
+  background-color:#ffddbb;
+  background-size:cover;
+}
+
+.container{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+}
+header{
+   
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+}
+header a{
+    color: #003300;
+    text-decoration: none;
+    font-size: 20px;
+}
+header ul{
+    margin: 0;
+    padding:0;
+    position: fixed;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+.active, nav ul li:hover{
+    border-radius: 3px;
+    background: #ffcc99;
+}
+ 
+.submenu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .submenu a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  nav:hover .submenu {
+    display: block;
+  }
+
+
+            
+                   
+
+
+
+
+
+
+            
+              
+
+
+  
+    
+ 
+ 
+
